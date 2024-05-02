@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser-form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form action="">
+    <div class="emailContainer">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="countryContainer">
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="ru">Russia</option>
+        <option value="us">US</option>
+        <option value="cn">China</option>
+        <option value="ge">Germany</option>
+        <option value="fr">France</option>
+      </select>
+    </div>
+    <div class="zipContainer">
+      <label for="zipCode">Zip code</label>
+      <input type="text" name="zipCode" id="zipCode">
+    </div>
+    <div class="passwordContainer">
+      <label for="password">Password</label>
+      <input type="text" name="password" id="password">
+    </div>
+    <div class="confirmContainer">
+      <label for="confirmPass">Confirm password</label>
+      <input type="text" name="confirmPass" id="confirmPass">
+    </div>
+      <button type="submit">Submit</button>
+  </form>
+  <script src="./app.js"></script>
+</body>
+</html>

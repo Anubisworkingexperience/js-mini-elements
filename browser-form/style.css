@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 3px solid red;
+  padding: 50px;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+form input, select {
+  width: 100%;
+  size: 2rem;
+  padding: 6px;
+}
+
+button[type='submit'] {
+  font-size: 1.5rem;
+  width: 25%;
+}
+
+.error {
+  color: red;
+}
+
+.errorMessage {
+  border: 2px solid red;
+}
+
+select {
+  font-size: 1.3rem;
+}
