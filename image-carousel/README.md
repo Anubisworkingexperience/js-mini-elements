@@ -1,0 +1,1 @@
+Image carousel with 3 images which automatically change every 5 seconds.

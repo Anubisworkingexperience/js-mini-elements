@@ -103,3 +103,24 @@ const checkZipCodeValidity = function() {
 };
 
 checkZipCodeValidity();
+
+const checkPasswordConfirmation = function(passwordElement, confirmElement, confirmContainer) {
+  let confirmError = document.querySelector('.passError');
+
+  if (passwordElement.classList.contains('valid') && passwordElement.value === confirmElement.value) {
+    console.log('passwords match');
+    confirmError.textContent = '';
+  }
+    else {
+      console.log('no match');
+      confirmError.textContent = "Passwords don't match";
+  }
+};
+
+confirmPassword.addEventListener("input", () => {
+ checkPasswordConfirmation(password, confirmPassword, confirmPasswordContainer);
+});
+
+form.addEventListener("submit", (event) => {
+  checkPasswordConfirmation(password, confirmPassword, confirmPasswordContainer);
+});
