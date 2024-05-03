@@ -29,6 +29,7 @@ button[type='submit'] {
 
 .error {
   color: red;
+  font-size: 1.2rem;
 }
 
 .errorMessage {
